@@ -1,0 +1,17 @@
+.np_container {
+    text-align: center;
+    width: 450px;
+    height: 51.35em;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.np_container h1 {
+    margin-top: 1.5em;
+    margin-bottom: 1.75em;
+}
+
+.np_container p {
+    margin-bottom: 2em;
+    color: #132a13;
+}

@@ -1,0 +1,11 @@
+.pf_container {
+    border-radius: 1em;
+    background-color: #606c38;
+    padding: 1em;
+}
+
+.pf_container p {
+    color:#dad7cd;
+    font-weight: bold;
+    margin-top: 1em;
+}

@@ -1,0 +1,30 @@
+.pc_container {
+    padding: 10px;
+    width: 25%;
+    background-color: #606c38;
+    border: 0.5em solid #606c38;
+    border-radius: 1.5%;
+    margin: 1em auto;
+}
+
+.pc_container p {
+    padding: 0.5em;
+    color: #dad7cd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.pc_item {
+    list-style: none;
+    padding: 0.5em;
+    background-color: aliceblue;
+}
+
+
+.pc_icones {
+    display: inline-block;
+    font-weight: bold;
+    color: #dad7cd;
+    background-color: #606c38;
+    padding: 0.5em;
+}

@@ -1,0 +1,16 @@
+.NOp_container {
+    width: 25%;
+    background-color: #606c38;
+    border: 0.5em solid #606c38;
+    border-radius: 1.5%;
+    margin: 1em auto;
+}
+
+.NOp_container p{
+    color: #283618;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding: 0.5em;
+    background-color: aliceblue;
+}

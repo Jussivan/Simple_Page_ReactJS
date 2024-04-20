@@ -1,0 +1,42 @@
+.navbar {
+    justify-content: space-between;
+    background-color: #606c38;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 24px;
+    text-decoration: none;
+}
+
+.coin{
+    margin: 0.3em;
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.item {
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+.item a {
+    color:#dad7cd;
+    text-decoration: none;
+}
+
+.item a:hover {
+    background-color: #dad7cd;
+    color:#606c38;
+}

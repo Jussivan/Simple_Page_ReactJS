@@ -1,0 +1,30 @@
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #606c38;
+    text-align: center;
+    padding: .85em;
+}
+
+.list {
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.item {
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color:#dad7cd;
+}
+
+.footer span {
+    font-weight: bold;
+    color:#dad7cd;
+    margin: 0.25em;
+}
