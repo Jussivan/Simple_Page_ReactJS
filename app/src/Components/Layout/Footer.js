@@ -1,4 +1,4 @@
-import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
+import {FaGithub, FaInstagram, FaLinkedin} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 import styles from './Footer.module.css'
 
@@ -7,16 +7,16 @@ function Footer() {
         <div>
             <ul className={styles.list}>
                 <li className={styles.item}>
-                    <Link to='https://www.facebook.com/minecraft'><FaFacebook/></Link>
+                    <Link to='https://github.com/Jussivan'><FaGithub/></Link>
                 </li>
                 <li className={styles.item}>
                 <Link to='https://www.instagram.com/jussivan_27'><FaInstagram/></Link>
                 </li>
                 <li className={styles.item}>
-                    <Link to='https://br.linkedin.com/in/jairmessiasbolsonaro'><FaLinkedin/></Link>
+                    <Link to='https://www.linkedin.com/in/jussivan-bezerra-matos-49254228b/'><FaLinkedin/></Link>
                 </li>
             </ul>
-            <span>Farmador</span>
+            <span>Jussivan B. Matos</span>
         </div>
     </footer>)
 }

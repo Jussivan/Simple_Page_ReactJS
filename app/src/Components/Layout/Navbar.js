@@ -1,28 +1,29 @@
 import {Link} from 'react-router-dom'
-import Container from './Container'
 import styles from './Navbar.module.css'
 import logo from '../img/dollar.png'
+import { IoHomeSharp } from "react-icons/io5";
+import { PiFilesFill } from "react-icons/pi";
+import { HiBuildingOffice } from "react-icons/hi2";
+import { RiContactsFill } from "react-icons/ri";
 
 function Navbar() {
     return(
       <nav class={styles.navbar}>
-        <Container>
-          <img class={styles.coin} src={logo}/>
-        <ul className={styles.list}>
-        <li className={styles.item}>
-          <Link to='/'>HOME</Link>
+        <div class={styles.coin}>
+          <img src={logo}/>
+        </div>
+        <li className={styles.item_home}>
+          <Link to='/'><IoHomeSharp/> HOME</Link>
         </li>
-        <li className={styles.item}>
-          <Link to='/Projects'>PROJETOS</Link>
+        <li className={styles.item_projects}>
+          <Link to='/Projects'><PiFilesFill/> PROJETOS</Link>
         </li>
-        <li className={styles.item}>
-          <Link to='/Empresa'>EMPRESA</Link>
+        <li className={styles.item_empresa}>
+          <Link to='/Empresa'><HiBuildingOffice/> EMPRESA</Link>
         </li>
-        <li className={styles.item}>
-          <Link to='/Contato'>CONTATO</Link>
+        <li className={styles.item_contato}>
+          <Link to='/Contato'><RiContactsFill/> CONTATO</Link>
         </li>
-      </ul>
-      </Container>
       </nav>
     )
 }

@@ -11,6 +11,7 @@ import Loading from '../Layout/Loading'
 function Projects() {
     const [projects, setProjects] = useState([]);
     const [removeLoading, setRemoveLoading] = useState(false);
+    const [ProjectMessage, setProjectMessage] = useState('');
 
     const location = useLocation();
     let message = '';
@@ -36,22 +37,28 @@ function Projects() {
     })
 
     function removeProject(id) {
-        fetch('http://localhost:5000/projects/${id}', {
-            method: 'DELETE',
-            headers: {
-                'Content-Type': 'application/json'
-            },   
-        }).then(resp => resp.json())
-        .then(data => {
-            setProjects(projects.filter((project) => project.id !== id))
-        })
-        .catch(err => console.log(err))
+        var Delete = window.confirm("Deseja Deletar permanentemente o Projeto ?");
+        if(Delete == 1) {
+            let Removido = "Projeto Removido com Sucesso";
+            fetch('http://localhost:5000/projects/' + id, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json'
+                },   
+            }).then(resp => resp.json())
+            .then(data => {
+                setProjects(projects.filter((project) => project.id !== id))
+                setProjectMessage("Projeto Removido com Sucesso")
+            })
+            .catch(err => console.log(err))
+        }
     }
 
     return (
         <div className={styles.projects_container}>
             <h1 className={styles.title_container}>Meus Projetos</h1>
             {message && <Message type='success' msg={message}/>}
+            {ProjectMessage && <Message type='success' msg={ProjectMessage}/>}
             <div className={styles.oldproject_container}>
                 <Container customClass='start'>
                     {projects.length > 0 &&

@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import styles from './NewProject.module.css'
 import ProjectForm from '../Project/ProjectForm'
+import {BsFillFloppy2Fill} from 'react-icons/bs'
 
 function NewProject() {
     const navigate = useNavigate();
@@ -24,11 +25,12 @@ function NewProject() {
         })
         .catch(err=>console.log(err))
     }
+
     return(
         <div className={styles.np_container}>
         <h1>Criar Projeto</h1>
         <p>Crie seus Projetos e Gerencie os Serviços</p>
-        <ProjectForm handleSubmit={createPost}/>
+        <ProjectForm handleSubmit={createPost} btnText=" SALVAR" icone={<BsFillFloppy2Fill/>}/>
         </div>
     )
 }

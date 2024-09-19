@@ -1,0 +1,49 @@
+.ec_body {
+    width: 100%;
+    padding: 4em;
+}
+
+.ec_bodyI {
+    margin: 2em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.ec_bodyII {
+    display: grid;
+    width: 100%;
+}
+
+.editText {
+    padding: 0.5em;
+    text-align: center;
+}
+
+.ec_container {
+    grid-area: 1/2/2/4;
+}
+
+.serviceText {
+    padding: 0.5em;
+    text-align: center;
+}
+
+.sc_container {
+    grid-area: 1/5/2/7;
+}
+
+.oldservice_container{
+    text-align: left;
+    padding: 0.5em;
+}
+
+.oldservice_container summary{
+    font-size: 1em;
+}
+
+.Loading {
+    text-align: center;
+    justify-content: space-between;
+}

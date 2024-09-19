@@ -7,6 +7,10 @@
     padding: .85em;
 }
 
+.footer ul a{
+    color: #dad7cd;
+}
+
 .list {
     justify-content: center;
     display: flex;
@@ -16,6 +20,7 @@
 
 .item {
     margin: 0 1em;
+    color: #dad7cd;
     text-decoration: none;
 }
 

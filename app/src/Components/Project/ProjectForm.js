@@ -5,7 +5,7 @@ import Input from '../form/Input'
 import Select from '../form/Select'
 import Submit from '../form/Submit'
 
-function ProjectForm({handleSubmit, projectData}) {
+function ProjectForm({handleSubmit, projectData, btnText, icone}) {
     const [categories, setCategories] = useState([]);
     const [project, setProject] = useState(projectData || {});
     useEffect(() => {
@@ -64,9 +64,7 @@ function ProjectForm({handleSubmit, projectData}) {
             handleOnChange={handleCategory}
             value={project.category ? project.category.id : ''}
             />
-            <Submit
-            text='Criar Projeto'
-            />
+            <Submit icone={icone} text={btnText}/>
         </form>
     )
 }

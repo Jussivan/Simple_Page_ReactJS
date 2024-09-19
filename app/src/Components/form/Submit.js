@@ -1,9 +1,9 @@
 import styles from './Submit.module.css'
 
-function Submit({text}) {
+function Submit({funcao,icone, text}) {
     return(
     <div>
-      <button className={styles.btn}>{text}</button>
+      <button onClick={funcao} className={styles.btn}>{icone}{text}</button>
     </div>
     )
 }

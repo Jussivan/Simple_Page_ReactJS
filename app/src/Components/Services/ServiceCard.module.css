@@ -1,26 +1,26 @@
-.pc_container {
+.sc_container {
     padding: 10px;
     width: 25%;
-    background-color: #606c38;
-    border: 0.5em solid #606c38;
+    background-color: #003566;
+    border: 0.5em solid #003566;
     border-radius: 1.5%;
     margin: 1em auto;
 }
 
-.pc_container p {
+.sc_container p {
     padding: 0.5em;
     color: #dad7cd;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
 }
 
-.pc_item {
+.sc_item {
     list-style: none;
     padding: 0.5em;
     background-color: aliceblue;
 }
 
-.pc_icones {
+.sc_icones {
     text-decoration: none;
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@
 
 .btn {
     font-weight: bold;
-    background-color: #283618;
+    background-color: #001d3d;
     color: #dad7cd;
     padding: 0.7em 1.2em;
     margin-top: 0.7em;
@@ -39,5 +39,5 @@
 
 .btn:hover {
     background-color: #dad7cd;
-    color: #283618;
+    color: #001d3d;
 }
