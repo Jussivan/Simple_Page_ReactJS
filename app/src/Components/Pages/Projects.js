@@ -21,7 +21,7 @@ function Projects() {
 
     useEffect(()=> {
         setTimeout(() => {
-            fetch('http://localhost:5000/projects', {
+            fetch('http://localhost:3001/projects', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
