@@ -19,7 +19,7 @@ function EditProject() {
 
     useEffect(() => {
         setTimeout(() => {
-            fetch('http://localhost:5000/projects/'+id, {
+            fetch('http://localhost:3001/projects/'+id, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
